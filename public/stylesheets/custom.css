@@ -183,3 +183,34 @@ div.field, div.actions {
   font-size: 12px;
   list-style: square;
 }
+
+#split_users{
+	border: 1px solid #000;
+	padding:10px 10px 10px 10px;		
+	-moz-border-radius:    5px;
+    -webkit-border-radius: 5px;
+    border-radius:         5px;
+}
+
+#split_users .gravatar {
+	float: left;
+	padding:0 20px 0 0;	
+}
+
+.nome {
+  font-size: 22px;
+  color:#000fa2;  	
+}
+
+.nome a:hover{
+	color:#000;	
+	background-color: #c9edfe;
+	text-decoration: none;
+}
+
+.email {
+  font-size: 18px;
+  color:#000fa2;  	
+  text-decoration: underline;
+}
+
