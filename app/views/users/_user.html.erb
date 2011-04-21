@@ -1,0 +1,8 @@
+
+	<%= gravatar_for user, :size => 60 %>
+	<h1 class="nome"><%= link_to user.name, user %></h1>
+ 	<a href="mailto:<%= user.email %>"><%= user.email %></a>
+ 	<% if current_user.admin? %>
+  | <%= link_to "delete", user, :method => :delete, :confirm => ("Are you sure you want to delete '#{user.name}'") ,
+                                :title => "Delete #{user.name}" %>
+  <% end %>

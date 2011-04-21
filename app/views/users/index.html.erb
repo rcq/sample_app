@@ -1,16 +1,14 @@
 <h1>Index</h1>
 
-  <%= will_paginate %>
+  <%= will_paginate @users %>
 
-  <% @user.each do |user| %>
+  <% @users.each do |user| %>
  	<div id="split_users">
- 	 <%= gravatar_for user, :size => 60 %>
-  	<h1 class="nome"><%= link_to user.name, user %></h1>
- 	<a href="mailto:<%= user.email %>"><%= user.email %></a>
-  	</div>
+ 	 <%= render  user %>
+ 	 </div>
   		<br />
  	<br />
   <% end %>  
   
-  <%= will_paginate %>
+  <%= will_paginate @users %>
   
